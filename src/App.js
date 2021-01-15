@@ -6,7 +6,7 @@ import SideBar from './components/sideBar'
 import SignIn from './components/signIn'
 import SignOut from './components/signOut'
 import ChatRoom from './components/chatRoom'
-import Side from './components/siderBarr'
+import Side from './components/side'
 
 import { auth } from './server/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
