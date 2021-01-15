@@ -1,6 +1,18 @@
 import React from 'react';
 import './App.css';
 
+/*
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+
+import LoginPage from "./pages/LoginPage";
+import MainPage from "./pages/MainPage";
+import PrivateRoute from "./routers/PrivateRoute";
+*/
+
 import Header from './components/header'
 import SideBar from './components/sideBar'
 import SignIn from './components/signIn'
@@ -10,7 +22,6 @@ import Side from './components/side'
 
 import { auth } from './server/firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
-
 
 function App() {
 

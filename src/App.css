@@ -43,7 +43,7 @@ body {
 
 .messageMain {
   padding: 10px;
-  height: 70vh;
+  height: 80vh;
   margin: 10vh 0 10vh;
   overflow-y: scroll;
   display: flex;
