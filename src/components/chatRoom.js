@@ -7,7 +7,7 @@ import { ChatMessage } from '../components/chatMessage'
 
 export default function ChatRoom() {
 
-    const dummy = useRef();
+    const user = useRef();
     const messagesRef = firestore.collection('messages');
     const query = messagesRef.orderBy('createdAt').limit(25);
   
@@ -29,7 +29,7 @@ export default function ChatRoom() {
       })
   
       setFormValue('');
-      dummy.current.scrollIntoView({ behavior: 'smooth' });
+      user.current.scrollIntoView({ behavior: 'smooth' });
     }
   
     return (<>
@@ -37,7 +37,7 @@ export default function ChatRoom() {
   
         {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
   
-        <span ref={dummy}></span>
+        <span ref={user}></span>
   
       </main>
   
