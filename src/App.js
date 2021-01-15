@@ -2,24 +2,11 @@ import React, { useRef, useState } from 'react';
 import './App.css';
 
 import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import { firestore } from './server/firebase'
+import { auth } from './server/firebase'
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-
-firebase.initializeApp({
-  apiKey: "AIzaSyAXBaeOfLu683mFgsX8i8MflYZFdmOe2mE",
-  authDomain: "chat-app-5500c.firebaseapp.com",
-  projectId: "chat-app-5500c",
-  storageBucket: "chat-app-5500c.appspot.com",
-  messagingSenderId: "387928386290",
-  appId: "1:387928386290:web:a16ece984cd211ae617e6b",
-  measurementId: "G-478KS12S03"
-})
-
-const auth = firebase.auth();
-const firestore = firebase.firestore();
 
 
 function App() {

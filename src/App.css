@@ -9,8 +9,6 @@ body {
 
 .area {
   width: 80vw;
-  display: flex;
-  flex-direction: column;
 }
 
 .side {
@@ -57,7 +55,7 @@ body {
   width: 10%;
   display: flex;
   font-size: 1rem;
-  padding-left: 50px;
+  padding-left: 3vw;
 }
 
 .messageForm {
@@ -90,6 +88,7 @@ form button {
 .channelInput {
   line-height: 1.5;
   background: #282c34;
+  width: 100px;
   color: white;
   outline: none;
   border: none;
@@ -124,10 +123,24 @@ button:disabled {
 }
 
 .sign-in {
-  color: black;
-  background: gray;
+  color: #282c34;
+  background: #EE6C4D;
   max-width: 400px;
+  height: 750px;
   margin: 0 auto;
+  border: none;
+  border-radius: 20px 20px;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.sign-out {
+  color: white;
+  background-color: #282c34;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 ul, li {
@@ -158,6 +171,12 @@ p {
 
 .channel {
   height: 15px;
+  cursor: pointer;
+}
+
+.current {
+  color: aqua;
+  font-size: larger;
 }
 
 img {
@@ -165,4 +184,8 @@ img {
   height: 40px;
   border-radius: 15%;
   margin: 2px 5px;
+}
+
+.hide {
+  display: none;
 }
