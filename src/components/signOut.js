@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { auth } from '../server/firebase'
 
 export default function SignOut() {

@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import firebase from 'firebase/app';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { auth } from '../server/firebase'
 import { firestore } from '../server/firebase'
+import { Channel } from '../components/channel'
 
 export default function SideBar() {
     const person = useRef();
